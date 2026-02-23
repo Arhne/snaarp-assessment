@@ -3,7 +3,11 @@
   flex-direction: column;
   height: 100%;
 }
-
+.sidebarTitle {
+  font-weight: 600;
+  margin-block: 1rem;
+  text-align: center;
+}
 .menuTop {
   display: flex;
   flex-direction: column;

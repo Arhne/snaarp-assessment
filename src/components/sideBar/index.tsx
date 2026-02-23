@@ -26,6 +26,7 @@ const MENU_BOTTOM: { path: string; label: string; icon: IconType }[] = [
 function Sidebar() {
   return (
     <nav className={styles.sidebar}>
+      <h3 className={styles.sidebarTitle}>Snaarp</h3>
       <div className={styles.menuTop}>
         {MENU_TOP.map((item) => {
           const Icon = item.icon;
