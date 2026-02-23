@@ -15,11 +15,6 @@ import { PiChartBar } from 'react-icons/pi';
 import { FaChartLine } from 'react-icons/fa';
 import { IoIosArrowDown } from 'react-icons/io';
 
-const LEGEND_COLORS = ['#3b82f6', '#8b5cf6', '#10b981']; 
-
-function getColor(index: number) {
-  return LEGEND_COLORS[index % LEGEND_COLORS.length];
-}
 
 export default function FileSharingWidget() {
     return (

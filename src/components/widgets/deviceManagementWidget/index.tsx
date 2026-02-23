@@ -1,4 +1,4 @@
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import { AreaChart, Area, Tooltip } from 'recharts';
 import { PiDevices, PiPlugs, PiPlugsConnected } from "react-icons/pi"
 import style from "./device.module.scss"
 import { FaArrowUp } from "react-icons/fa6"

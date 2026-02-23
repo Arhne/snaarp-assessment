@@ -1,7 +1,7 @@
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
-import { PiDevices, PiPlugs, PiPlugsConnected, PiUser } from "react-icons/pi"
+import { AreaChart, Area, Tooltip } from 'recharts';
+import { PiPlugs, PiPlugsConnected } from "react-icons/pi"
 import style from "../deviceManagementWidget/device.module.scss"
-import { FaArrowDown, FaArrowUp } from "react-icons/fa6"
+import { FaArrowDown } from "react-icons/fa6"
 import { MdOutlineEmail, MdOutlineMarkEmailRead } from 'react-icons/md';
 
 const data = [

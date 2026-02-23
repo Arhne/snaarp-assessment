@@ -2,7 +2,7 @@
 import { BsLightningCharge } from 'react-icons/bs';
 import style from './banner.module.scss'
 import { FaArrowDown, FaArrowUp } from "react-icons/fa6";
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import { AreaChart, Area, CartesianGrid, Tooltip } from 'recharts';
 import { PieChart, Pie, Label } from 'recharts';
 import { PiWarningOctagonFill } from 'react-icons/pi';
 

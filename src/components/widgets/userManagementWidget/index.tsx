@@ -1,7 +1,7 @@
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import { AreaChart, Area, Tooltip } from 'recharts';
 import { PiDevices, PiPlugs, PiPlugsConnected, PiUser } from "react-icons/pi"
 import style from "../deviceManagementWidget/device.module.scss"
-import { FaArrowDown, FaArrowUp } from "react-icons/fa6"
+import { FaArrowDown} from "react-icons/fa6"
 
 const data = [
     { year: '2020', iphone: 4000 },

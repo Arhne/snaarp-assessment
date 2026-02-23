@@ -1,4 +1,4 @@
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, Tooltip, Legend } from 'recharts';
 import style from "./fileSharing.module.scss"
 import { PiChartBar } from 'react-icons/pi';
 import { FaChartLine } from 'react-icons/fa';

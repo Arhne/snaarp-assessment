@@ -1,5 +1,6 @@
 'use client';
 
+import type { RefObject } from 'react';
 import { useDrop } from 'react-dnd';
 import styles from './draggableGrid.module.scss';
 
@@ -10,10 +11,10 @@ interface DraggableGridProps {
   dragType?: string;
 }
 
-export function DraggableGrid({ children, onDragEnd, className = '', dragType = 'widget' }: DraggableGridProps) {
+export function DraggableGrid({ children, onDragEnd: _onDragEnd, className = '', dragType = 'widget' }: DraggableGridProps) {
   const [{ isOver }, drop] = useDrop({
     accept: dragType,
-    drop: (item: { index: number }, monitor) => {},
+    drop: (_item: { index: number }, _monitor) => {},
     collect: (monitor) => ({
       isOver: monitor.isOver(),
     }),
@@ -21,7 +22,7 @@ export function DraggableGrid({ children, onDragEnd, className = '', dragType = 
 
   return (
     <div
-      //ref={drop}
+      ref={drop as unknown as RefObject<HTMLDivElement>}
       className={`${styles.gridContainer} ${styles.dropZone} ${isOver ? styles.isOver : ''} ${className}`.trim()}
     >
       {children}
