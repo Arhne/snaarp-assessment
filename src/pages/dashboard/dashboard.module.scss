@@ -1,0 +1,67 @@
+.dashboardWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.widgetGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  align-items: stretch;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.widgetMgtGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  align-items: stretch;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.widgetProductivityGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  align-items: stretch;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+
+    .productivityItem6 {
+      grid-column: 2 / span 3;
+    }
+    .productivityItem7 {
+      grid-column: 1 / span 4;
+    }
+    .productivityItem8 {
+      grid-column: 1 / span 3;
+    }
+  }
+}
+
+.widgetItem {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+
+  > div {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+
+    > * {
+      min-height: 0;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+

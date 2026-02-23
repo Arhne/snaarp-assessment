@@ -1,0 +1,18 @@
+.dragContainer {
+//   border-radius: 0.75rem;
+//   border: 1px solid var(--border); 
+//   background-color: var(--card); 
+//   padding: 1.5rem; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: all 200ms ease-out; 
+  cursor: grab;
+
+  &:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+    border-color: rgba(var(--theme-blue-800), 0.5);
+  }
+
+  &:active {
+    cursor: grabbing;
+  }
+}

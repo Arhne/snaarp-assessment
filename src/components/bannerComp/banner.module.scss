@@ -1,0 +1,136 @@
+.networkBannerWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: var(--container-padding);
+
+  .colContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .flexContent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .iconWrapper {
+    background-color: var(--theme-gray-60);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+  }
+  .increase {
+    color: var(--theme-green-600);
+  }
+  .decrease {
+    color: var(--theme-red-900);
+  }
+  .chartWrapper {
+    border-color: var(--theme-gray-200);
+    border-style: solid;
+    border-width: 1px;
+  }
+}
+.container {
+  background-color: var(--theme-white);
+  padding: var(--container-padding);
+  border-radius: var(--border-radius);
+  margin-block: 5px;
+  .flexContent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .iconWrapper {
+    background-color: var(--theme-gray-60);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+  }
+  .storageBannerWrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    min-width: 0; 
+  }
+  .noteWrapper {
+    min-width: 0;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+  .pieWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 200px;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+  .warningNote {
+    display: flex;
+    gap: 0.5rem;
+    min-width: 0;
+    border-inline: 3px solid var(--theme-yellow-800);
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    font-size: 0.8rem;
+
+    > div {
+      min-width: 0;
+      overflow-wrap: break-word;
+    }
+  }
+  .noteText {
+    color: #8B5CF6;
+  }
+  .storageLists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    margin-block: 20px;
+    min-width: 0;
+  }
+  .flexListContent{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .bulletPoint {
+    width: 10px;
+    height: 10px;
+    border-radius: 10%;
+  }
+  .btn{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .upgradebtn{
+   padding: .3rem;
+   border: 1px solid var(--theme-blue-800);
+   background-color: transparent;
+   color: var(--theme-blue-800);
+   border-radius: var(--border-radius);
+   display: flex;
+   align-items: center;
+   gap: 8px; 
+  }
+}
+.small {
+    font-size: 0.56rem;
+  }
+   .smallText {
+    font-size: 0.8rem;
+  }
+
+  @media (min-width: 768px) {
+  .container {
+    margin-block: 0;
+  }
+}

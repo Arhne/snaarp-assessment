@@ -1,0 +1,68 @@
+.widgetContainer {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--theme-white);
+  padding: var(--container-padding);
+  border-radius: var(--border-radius);
+  .activeCountries {
+    > * + * {
+      margin-top: 0.5rem; // 8px
+    }
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .flexContent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .iconWrapper {
+    background-color: var(--theme-gray-60);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+  }
+  .small {
+    font-size: 0.56rem;
+  }
+  .smallText {
+    font-size: 0.8rem;
+  }
+  .chartFlex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .chartWrapper {
+    border: 0.5px solid var(--theme-gray-800);
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 0.3rem;
+  }
+  .countryRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .progressBar {
+    height: 6px;
+    border-radius: 3px;
+    background-color: var(--theme-gray-200);
+    overflow: hidden;
+  }
+  .progressFill {
+    height: 100%;
+    background-color: var(--theme-green-100);
+    transition: width 0.3s ease-in-out;
+  }
+}

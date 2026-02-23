@@ -1,0 +1,60 @@
+.InputComp {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  .inputWrapper {
+    position: relative;
+  }
+  .searchIcon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #999;
+  }
+  .input {
+    padding: 0px 10px;
+    height: 50px;
+    border-radius: 8px;
+    color: var(--theme-black-900);
+    border: 1px solid var(--theme-gray-250);
+    outline: none;
+    background: transparent;
+    &::placeholder {
+      color: var(--theme-gray-250);
+    }
+    &:disabled {
+      background: var(--theme-gray-50);
+    }
+  }
+  .inputWithIcon {
+  padding-left: 40px; 
+}
+  .label {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: var(--theme-black-900);
+    span {
+      color: red;
+    }
+    & .note {
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 400;
+      color: var(--theme-gray-600);
+      margin-left: 6px;
+    }
+  }
+
+  .iconButton {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+}
